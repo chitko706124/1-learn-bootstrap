@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        height: 3000px;
+      }
+      .box {
+        height: 600px;
+      }
+      .box-one {
+        position: absolute;
+        z-index: 3;
+      }
+      .box-two {
+        position: absolute;
+        z-index: 2;
+      }
+      .box-three {
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box border border-3 border-primary m-5">
+      <div class="box-one p-3 bg-black"></div>
+      <div class="box-two p-4 bg-success"></div>
+      <div class="box-three p-5 bg-danger"></div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt fuga
+        non totam numquam, ipsa id quas reprehenderit enim ducimus, corrupti aut
+        reiciendis nesciunt necessitatibus tenetur, qui placeat! Necessitatibus,
+        totam ullam. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Provident culpa exercitationem architecto? Fuga inventore laudantium,
+        exercitationem quam unde tenetur ducimus dignissimos consequatur
+        reiciendis magnam veritatis odio reprehenderit natus repellat sapiente.
+      </p>
+    </div>
+  </body>
+</html>
